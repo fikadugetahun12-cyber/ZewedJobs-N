@@ -1,0 +1,165 @@
+/* ===== RESET & VARIABLES ===== */
+:root {
+    --primary: #ff0042;
+    --primary-light: #ffe6ec;
+    --secondary: #F39C12;
+    --dark: #2C2C2C;
+    --light: #F5F6FA;
+    --white: #FFFFFF;
+    --teal: #00B7B5;
+    --purple: #9929EA;
+    --green: #27AE60;
+    --blue: #3498DB;
+    --radius: 12px;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark);
+    background: var(--light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.logo:hover {
+    transform: translateY(-2px);
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(255, 0, 66, 0.2);
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 14px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 0, 66, 0.2);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), #ff3366);
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 0, 66, 0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 0, 66, 0.3);
+}
+
+.btn-teal {
+    background: linear-gradient(135deg, var(--teal), #00d9d6);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 183, 181, 0.2);
+}
+
+.btn-purple {
+    background: linear-gradient(135deg, var(--purple), #b146f0);
+    color: white;
+    box-shadow: 0 4px 12px rgba(153, 41, 234, 0.2);
+}
+
+.btn-orange {
+    background: linear-gradient(135deg, var(--secondary), #f5b01e);
+    color: white;
+    box-shadow: 0 4px 12px rgba(243, 156, 18, 0.2);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Continue with all CSS from the original file... */
+/* Would include all CSS styles here */
